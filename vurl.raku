@@ -15,7 +15,7 @@ sub MAIN(Str $token) {
         whenever $discord.messages -> $m {
             if $m.channel ~~ $announcements and $m.content !~~ / "https://" / {
                 $m.delete;
-                $announcements.send-message(':b4nzyblob: No chatting! Links only!');
+                $announcements.send-message('<:b4nzyblob:525272042208231434> No chatting! Links only!');
             }
         }
     }
